@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sensores</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section> 1. Sensores</section>
+
+				<section> 
+					1.1 Ópticos 
+						<section>
+							<p> Los sensores ópticos son dispositivos que detectan y responden a la luz u otras formas de radiación electromagnética. Son ampliamente utilizados en una variedad de aplicaciones, incluyendo la automatización industrial, la seguridad, la robótica, y la electrónica de consumo.</p>
+						</section>
+						<section>
+							1.1.1 Tipos
+						</section>
+						<section>
+							<p>Sensores de Luz Reflejada</p>
+						</section>
+						<section>
+							<p>
+								Fotointerruptores: 
+							</p>
+							<p>
+								Detectan la interrupción de un haz de luz. Se utilizan para detectar la presencia o ausencia de un objeto.
+							</p>
+						</section>
+						<section>
+							<p>
+								Sensores de Reflejo Difuso:  
+							</p>
+							<p>
+								Emite luz hacia un objeto y detecta la luz reflejada. El sensor mide la cantidad de luz reflejada para determinar la presencia del objeto.
+							</p>
+						</section>
+						<section>
+							<p>
+								Sensores Retroreflectivos:   
+							</p>
+							<p>
+								Utilizan un reflector para devolver la luz emitida por el sensor. Detectan la interrupción del haz de luz reflejado.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Luz Transmitida</p>
+						</section>
+						<section>
+							<p>
+								Barrera Óptica: 
+							</p>
+							<p>
+								Consiste en un emisor y un receptor de luz separados. Detecta objetos que interrumpen el haz de luz entre ambos.
+							</p>
+						</section>
+						<section>
+							<p>
+								LIDAR (Light Detection and Ranging):   
+							</p>
+							<p>
+								Utiliza pulsos de láser para medir distancias basándose en el tiempo que tarda la luz en reflejarse en un objeto y regresar al sensor.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Imagen</p>
+						</section>
+						<section>
+							<p>
+								Cámaras CCD/CMOS:  
+							</p>
+							<p>
+								Capturan imágenes mediante la detección de luz en cada píxel del sensor. Las cámaras CCD (Dispositivo de Carga Acoplada) y CMOS (Semiconductor Complementario de Óxido Metálico) son los tipos más comunes.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Color</p>
+							<p>
+								Detectan la intensidad de la luz en diferentes longitudes de onda (rojo, verde, azul) para identificar colores específicos.
+							</p>
+						</section>
+						<section>
+							1.1.2 Funcionamiento
+						</section>
+						<section>
+							<p>
+								El principio de funcionamiento básico de los sensores ópticos se basa en la emisión y recepción de luz. Estos sensores suelen incluir los siguientes componentes:
+							</p>
+						</section>
+						<section>
+							<p>
+								Emisor de Luz:   
+							</p>
+							<p>
+								Puede ser un diodo emisor de luz (LED), un láser, o cualquier otra fuente de luz. Emite un haz de luz hacia un objeto o a través de un espacio.
+							</p>
+						</section>
+						<section>
+							<p>
+								Receptor de Luz:    
+							</p>
+							<p>
+								Detecta la luz que ha sido reflejada o transmitida. Puede ser un fotodiodo, fototransistor, o sensor de imagen.
+							</p>
+						</section>
+						<section>
+							<p>
+								Procesamiento de Señal:    
+							</p>
+							<p>
+								La señal recibida es procesada para determinar la presencia, distancia, color, o cualquier otra característica relevante del objeto.
+							</p>
+						</section>
+						<section>
+							1.1.3 Características
+						</section>
+						<section>
+							<p>
+								Precisión:  
+							</p>
+							<p>
+								Alta resolución y precisión en la detección de objetos y medición de distancias.
+							</p>
+						</section>
+						<section>
+							<p>
+								Rango de Operación:     
+							</p>
+							<p>
+								Varía dependiendo del tipo de sensor, desde unos pocos milímetros (sensores de proximidad) hasta varios kilómetros (LIDAR).
+							</p>
+						</section>
+						<section>
+							<p>
+								Sensibilidad a la Luz Ambiente:     
+							</p>
+							<p>
+								Algunos sensores pueden ser afectados por la luz ambiente, lo que puede interferir en su precisión. Los diseños avanzados incluyen filtros o modulación de la luz para mitigar estos efectos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Velocidad de Respuesta:      
+							</p>
+							<p>
+								Muy rápida, lo que permite su uso en aplicaciones de alta velocidad como la detección en líneas de producción.
+							</p>
+						</section>
+						<section>
+							<p>
+								Durabilidad:      
+							</p>
+							<p>
+								Generalmente alta, con resistencia a condiciones adversas, aunque pueden ser sensibles al polvo y a la suciedad que afecte la óptica.
+							</p>
+						</section>
+						<section>
+							1.1.4 Modo de comunicación
+						</section>
+						<section>
+							<p>
+								Salida Digital:  
+							</p>
+							<p>
+								Muchos sensores ópticos proporcionan una señal digital (on/off) para indicar la detección de un objeto o la interrupción de un haz de luz.
+							</p>
+						</section>
+						<section>
+							<p>
+								Salida Analógica:      
+							</p>
+							<p>
+								Algunos sensores ofrecen una salida analógica, que varía en función de la intensidad de la luz recibida, permitiendo medir gradualmente la distancia, la intensidad de luz o el color.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Serial (I2C, SPI, UART):      
+							</p>
+							<p>
+								Los sensores ópticos más avanzados, como los sensores de imagen o LIDAR, pueden utilizar protocolos de comunicación serial para transmitir grandes cantidades de datos a microcontroladores o sistemas de procesamiento.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Inalámbrica:       
+							</p>
+							<p>
+								En aplicaciones donde la conexión por cable no es práctica, los sensores ópticos pueden comunicarse mediante tecnologías inalámbricas como Bluetooth, ZigBee, o Wi-Fi.
+							</p>
+						</section>
+						<section>
+							<p>
+								Bus de Campo (Fieldbus):       
+							</p>
+							<p>
+								En aplicaciones industriales, los sensores ópticos pueden estar conectados a sistemas de control utilizando buses de campo como Modbus, Profibus, o CANbus.
+							</p>
+						</section>
+				</section>
+
+				<section> 
+					1.2 Temperatura 
+						<section>
+							<p> 
+								Los sensores de temperatura son dispositivos que miden la temperatura de un entorno o de un objeto, y convierten esa información en una señal que puede ser interpretada y utilizada por sistemas electrónicos. Estos sensores son fundamentales en aplicaciones que van desde la automatización industrial hasta dispositivos médicos y electrodomésticos. 
+							</p>
+						</section>
+						<section>
+							1.2.1 Tipos
+						</section>
+						<section>
+							<p>Termopares</p>
+						</section>
+						<section>
+							<p>
+								Un termopar consiste en dos metales diferentes unidos en un punto de medición. Cuando hay una diferencia de temperatura entre el punto de unión y los extremos libres, se genera un voltaje (fuerza electromotriz) proporcional a esa diferencia de temperatura.
+							</p>
+						</section>
+						<section>
+							<p>Termistores</p>
+						</section>
+						<section>
+							<p>
+								Son resistencias cuya resistencia eléctrica varía significativamente con la temperatura. Existen dos tipos principales:
+								<ul>
+									<li>NTC (Coeficiente de Temperatura Negativo): La resistencia disminuye al aumentar la temperatura.</li>
+									<li>PTC (Coeficiente de Temperatura Positivo): La resistencia aumenta al aumentar la temperatura.</li>
+								</ul>
+							</p>
+						</section>
+						<section>
+							<p>RTD (Resistance Temperature Detector)</p>
+						</section>
+						<section>
+							<p>
+								Los RTD son resistencias de metal (habitualmente platino) cuya resistencia aumenta linealmente con la temperatura.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Temperatura de Estado Sólido</p>
+						</section>
+						<section>
+							<p>
+								Utilizan semiconductores para medir la temperatura, generando una señal de voltaje que varía linealmente con la temperatura.
+							</p>
+						</section>
+						<section>
+							<p>Sensores Infrarrojos (IR)</p>
+						</section>
+						<section>
+							<p>
+								Detectan la radiación infrarroja emitida por un objeto y la convierten en una señal de temperatura sin contacto directo.
+							</p>
+						</section>
+
+						<section>
+							1.2.2 Funcionamiento
+						</section>
+						<section>
+							<p>
+								El principio de funcionamiento de los sensores de temperatura varía según el tipo, pero todos se basan en la relación entre la temperatura y alguna propiedad física (resistencia, voltaje, corriente, etc.). Estos cambios son detectados y convertidos en una señal eléctrica que puede ser procesada para determinar la temperatura
+							</p>
+						</section>
+						<section>
+							<p>
+								Termopares:  
+							</p>
+							<p>
+								Generan un voltaje proporcional a la diferencia de temperatura entre dos puntos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Termistores y RTD:    
+							</p>
+							<p>
+								Su resistencia cambia con la temperatura, y este cambio se mide para determinar la temperatura.
+							</p>
+						</section>
+						<section>
+							<p>
+								Sensores de Estado Sólido:    
+							</p>
+							<p>
+								Utilizan propiedades eléctricas de semiconductores para producir una señal proporcional a la temperatura.
+							</p>
+						</section>
+						<section>
+							<p>
+								Sensores IR:     
+							</p>
+							<p>
+								Miden la radiación térmica emitida por un objeto y la convierten en una señal de temperatura.
+							</p>
+						</section>
+
+						<section>
+							1.2.3 Características
+						</section>
+						<section>
+							<p>
+								Precisión:  
+							</p>
+							<p>
+								Varía según el tipo de sensor, con RTD y sensores de estado sólido ofreciendo la mayor precisión.
+							</p>
+						</section>
+						<section>
+							<p>
+								Rango de Temperatura:     
+							</p>
+							<p>
+								Los termopares cubren el rango más amplio, mientras que los termistores y sensores de estado sólido tienen un rango más limitado.
+							</p>
+						</section>
+						<section>
+							<p>
+								Tiempo de Respuesta:     
+							</p>
+							<p>
+								Los termopares y sensores infrarrojos suelen tener un tiempo de respuesta más rápido, mientras que los RTD son más lentos pero más precisos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Estabilidad:       
+							</p>
+							<p>
+								RTD y sensores de estado sólido son conocidos por su estabilidad a largo plazo.
+							</p>
+						</section>
+						<section>
+							<p>
+								Costo:      
+							</p>
+							<p>
+								Los termopares son generalmente más económicos, mientras que los RTD y sensores de estado sólido suelen ser más costosos debido a su precisión.
+							</p>
+						</section>
+						<section>
+							1.2.4 Modo de comunicación
+						</section>
+						<section>
+							<p>
+								Salida Analógica:  
+							</p>
+							<p>
+								Muchos sensores de temperatura, como los termopares y termistores, proporcionan una salida analógica (voltaje o resistencia) que se debe convertir en una temperatura mediante un circuito de acondicionamiento de señal.
+							</p>
+						</section>
+						<section>
+							<p>
+								Salida Digital:      
+							</p>
+							<p>
+								Los sensores de estado sólido modernos a menudo tienen una salida digital, donde la temperatura se comunica directamente en un formato binario. Esto es común en sensores que utilizan protocolos como I2C, SPI, o 1-Wire.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Serial (I2C, SPI, UART):      
+							</p>
+							<p>
+								Los sensores de temperatura digitales pueden utilizar estos protocolos para comunicar datos a microcontroladores o sistemas embebidos. Estos protocolos permiten una fácil integración en sistemas electrónicos complejos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Inalámbrica:       
+							</p>
+							<p>
+								Para aplicaciones en las que el cableado no es práctico, algunos sensores de temperatura pueden comunicarse de manera inalámbrica utilizando tecnologías como Bluetooth, ZigBee, o Wi-Fi.
+							</p>
+						</section>
+						<section>
+							<p>
+								Bus de Campo (Fieldbus):       
+							</p>
+							<p>
+								En aplicaciones industriales, los sensores de temperatura pueden estar conectados a sistemas de control utilizando buses de campo como Modbus, Profibus, o CANbus para transmitir la información de temperatura a través de largas distancias y a múltiples dispositivos.
+							</p>
+						</section>
+				</section>
+
+				<section> 
+					1.3 Presión 
+						<section>
+							<p> Los sensores de presión son dispositivos que miden la presión de gases o líquidos y la convierten en una señal eléctrica que puede ser procesada por sistemas electrónicos. Estos sensores son fundamentales en diversas aplicaciones, desde la industria automotriz hasta la medicina, la meteorología, y la automatización industrial. 
+						</section>
+						<section>
+							1.3.1 Tipos
+						</section>
+						<section>
+							<p>Sensores de Presión Absoluta</p>
+						</section>
+						<section>
+							<p>
+								Miden la presión relativa al vacío absoluto (cero absoluto). Están diseñados para medir la presión total de un sistema sin referencia a la presión atmosférica.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Presión Manométrica (Relativa)</p>
+						</section>
+						<section>
+							<p>
+								Miden la presión en relación con la presión atmosférica actual. La presión manométrica es la diferencia entre la presión absoluta y la presión atmosférica.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Presión Diferencial</p>
+						</section>
+						<section>
+							<p>
+								Miden la diferencia de presión entre dos puntos diferentes en un sistema. Estos sensores tienen dos entradas y calculan la diferencia de presión entre ellas.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Presión de Vacío</p>
+						</section>
+						<section>
+							<p>
+								Están diseñados para medir presiones por debajo de la presión atmosférica, es decir, en condiciones de vacío parcial o total.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Presión Barométrica</p>
+						</section>
+						<section>
+							<p>
+								Miden la presión atmosférica. Son un tipo de sensor de presión absoluta, calibrado específicamente para medir la presión ambiental.
+							</p>
+						</section>
+						<section>
+							1.1.2 Funcionamiento
+						</section>
+						<section>
+							<p>
+								El principio de funcionamiento de los sensores de presión varía según el tipo, pero todos miden la presión al detectar la fuerza que ejerce un fluido (gas o líquido) sobre una superficie.
+							</p>
+						</section>
+						<section>
+							<p>
+								Piezoresistivos:   
+							</p>
+							<p>
+								Utilizan un material semiconductor cuya resistencia cambia con la presión aplicada. Estos cambios en resistencia son medidos y convertidos en una señal eléctrica.
+							</p>
+						</section>
+						<section>
+							<p>
+								Capacitivos:     
+							</p>
+							<p>
+								Detectan cambios en la capacitancia entre dos placas cuando la presión causa un desplazamiento de una membrana flexible.
+							</p>
+						</section>
+						<section>
+							<p>
+								Piezoeléctricos:    
+							</p>
+							<p>
+								Generan una carga eléctrica cuando un material piezoeléctrico es deformado por la presión.
+							</p>
+						</section>
+						<section>
+							<p>
+								Resonantes:     
+							</p>
+							<p>
+								Miden la presión a través de cambios en la frecuencia de resonancia de un sensor resonante que responde a la presión aplicada.
+							</p>
+						</section>
+						<section>
+							<p>
+								Ópticos:    
+							</p>
+							<p>
+								Utilizan la luz para medir el desplazamiento de una membrana o el cambio de índice de refracción en un medio debido a la presión.
+							</p>
+						</section>
+
+						<section>
+							1.3.3 Características
+						</section>
+						<section>
+							<p>
+								Precisión:  
+							</p>
+							<p>
+								Depende del tipo de sensor y su aplicación. Los sensores de alta precisión se utilizan en aplicaciones críticas donde las mediciones exactas son cruciales.
+							</p>
+						</section>
+						<section>
+							<p>
+								Rango de Presión:      
+							</p>
+							<p>
+								Cada sensor tiene un rango de presión específico que puede medir. Algunos sensores están diseñados para medir presiones extremadamente bajas (vacío), mientras que otros pueden medir presiones muy altas.
+							</p>
+						</section>
+						<section>
+							<p>
+								Resolución:       
+							</p>
+							<p>
+								La menor variación de presión que el sensor puede detectar. Una alta resolución es importante en aplicaciones donde se requiere medir pequeños cambios de presión.
+							</p>
+						</section>
+						<section>
+							<p>
+								Estabilidad:      
+							</p>
+							<p>
+								La capacidad del sensor para mantener la precisión y exactitud de las mediciones a lo largo del tiempo y bajo diferentes condiciones.
+							</p>
+						</section>
+						<section>
+							<p>
+								Tiempo de Respuesta:       
+							</p>
+							<p>
+								La velocidad a la cual el sensor puede detectar y responder a cambios en la presión. Un tiempo de respuesta rápido es esencial en aplicaciones dinámicas.
+							</p>
+						</section>
+						<section>
+							<p>
+								Durabilidad:      
+							</p>
+							<p>
+								Los sensores de presión deben ser resistentes a condiciones ambientales adversas, como la humedad, la corrosión, y las vibraciones.
+							</p>
+						</section>
+						<section>
+							1.3.4 Modo de comunicación
+						</section>
+						<section>
+							<p>
+								Salida Digital:  
+							</p>
+							<p>
+								Sensores de presión más avanzados pueden ofrecer salidas digitales, en las que la presión medida se convierte directamente en un formato binario. Estos sensores utilizan protocolos de comunicación como I2C, SPI, o 1-Wire.
+							</p>
+						</section>
+						<section>
+							<p>
+								Salida Analógica:      
+							</p>
+							<p>
+								La mayoría de los sensores de presión tradicionales proporcionan una salida analógica, generalmente en forma de voltaje (mV, V) o corriente (4-20 mA) que varía linealmente con la presión.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Serial (I2C, SPI, UART):      
+							</p>
+							<p>
+								Los sensores digitales pueden utilizar estos protocolos para transmitir datos de presión a microcontroladores o sistemas embebidos. Esto permite la integración en sistemas complejos y la transmisión de datos a alta velocidad.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Inalámbrica:       
+							</p>
+							<p>
+								En aplicaciones donde el cableado es impráctico, algunos sensores de presión se comunican de manera inalámbrica utilizando tecnologías como Bluetooth, ZigBee, o Wi-Fi. Esto es común en aplicaciones de monitoreo remoto.
+							</p>
+						</section>
+						<section>
+							<p>
+								Bus de Campo (Fieldbus):       
+							</p>
+							<p>
+								En entornos industriales, los sensores de presión pueden estar conectados a redes de campo (Fieldbus) como Modbus, Profibus, o CANbus para permitir la transmisión de datos a largas distancias y la comunicación con múltiples dispositivos en un sistema automatizado.
+							</p>
+						</section>
+				</section>
+
+				<section> 
+					1.4 Proximidad 
+						<section>
+							<p> 
+								Los sensores de proximidad son dispositivos que detectan la presencia o ausencia de un objeto dentro de un rango determinado sin necesidad de contacto físico. Son ampliamente utilizados en aplicaciones como la automatización industrial, la robótica, los sistemas de seguridad, y la electrónica de consumo.
+							</p>
+						</section>
+						<section>
+							1.4.1 Tipos
+						</section>
+						<section>
+							<p>Sensores Inductivos</p>
+						</section>
+						<section>
+							<p>
+								Detectan objetos metálicos mediante la generación de un campo electromagnético. Cuando un objeto metálico entra en el campo, cambia la inductancia del circuito, lo que provoca una señal que indica la presencia del objeto.
+							</p>
+						</section>
+						<section>
+							<p>Sensores Capacitivos</p>
+						</section>
+						<section>
+							<p>
+								Detectan cualquier material que altere el campo eléctrico que generan. Esto incluye metales, plásticos, líquidos y materiales orgánicos. El sensor mide los cambios en la capacitancia del circuito cuando un objeto se acerca.
+							</p>
+						</section>
+						<section>
+							<p>Sensores Ópticos</p>
+						</section>
+						<section>
+							<p>
+								Utilizan un haz de luz (generalmente infrarrojo) para detectar la presencia de un objeto. El sensor emite luz y detecta la luz reflejada por el objeto (o la interrupción del haz en configuraciones de barrera).
+							</p>
+						</section>
+						<section>
+							<p>Sensores Ultrasónicos</p>
+						</section>
+						<section>
+							<p>
+								Emiten ondas de sonido de alta frecuencia y miden el tiempo que tarda el eco en regresar después de rebotar en un objeto. Este tiempo se utiliza para calcular la distancia al objeto.
+							</p>
+						</section>
+						<section>
+							<p>Sensores Magnéticos</p>
+						</section>
+						<section>
+							<p>
+								Detectan la presencia de campos magnéticos, generalmente de un imán permanente. Son muy utilizados en aplicaciones que requieren detección de proximidad sin contacto físico, especialmente en entornos donde otros sensores pueden fallar debido a condiciones ambientales adversas.
+							</p>
+						</section>
+						<section>
+							<p>Sensores de Proximidad de Radiofrecuencia (RFID)</p>
+						</section>
+						<section>
+							<p>
+								Utilizan ondas de radio para comunicarse con una etiqueta (tag) RFID, lo que permite la detección de la etiqueta y la lectura/escritura de datos en ella a una corta distancia.
+							</p>
+						</section>
+
+						<section>
+							1.4.2 Funcionamiento
+						</section>
+						<section>
+							<p>
+								El funcionamiento de los sensores de proximidad se basa en la detección de cambios en un campo (electromagnético, eléctrico, óptico, acústico, magnético o de radiofrecuencia) que ocurre cuando un objeto entra en ese campo. La naturaleza del campo y del objeto determina el tipo de sensor adecuado.
+							</p>
+						</section>
+						<section>
+							<p>
+								Inductivos:    
+							</p>
+							<p>
+								Requieren un objeto metálico para funcionar, ya que detectan cambios en un campo electromagnético.
+							</p>
+						</section>
+						<section>
+							<p>
+								Capacitivos:    
+							</p>
+							<p>
+								Pueden detectar cualquier material que afecte un campo eléctrico, lo que los hace versátiles para múltiples aplicaciones.
+							</p>
+						</section>
+						<section>
+							<p>
+								Ópticos:    
+							</p>
+							<p>
+								Detectan la luz reflejada o la interrupción de un haz de luz, siendo útiles para detectar objetos a distancia.
+							</p>
+						</section>
+						<section>
+							<p>
+								Ultrasónicos:   
+							</p>
+							<p>
+								Miden el tiempo de retorno de un sonido ultrasónico, adecuado para medir distancias y detectar objetos independientemente del material.
+							</p>
+						</section>
+						<section>
+							<p>
+								Magnéticos:     
+							</p>
+							<p>
+								Detectan campos magnéticos generados por imanes, útiles en aplicaciones donde otros métodos podrían no ser efectivos.
+							</p>
+						</section>
+						<section>
+							<p>
+								RFID:    
+							</p>
+							<p>
+								Interactúan con etiquetas RFID para la identificación y seguimiento de objetos, combinando detección y comunicación de datos.
+							</p>
+						</section>
+
+						<section>
+							1.4.3 Características
+						</section>
+						<section>
+							<p>
+								Precisión:  
+							</p>
+							<p>
+								Alta en aplicaciones específicas, como la detección de objetos metálicos con sensores inductivos o la medición de distancia con sensores ultrasónicos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Rango de Detección:     
+							</p>
+							<p>
+								Varía según el tipo de sensor y la aplicación. Los sensores ultrasónicos suelen tener un rango de detección más amplio en comparación con los sensores inductivos o capacitivos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Velocidad de Respuesta:     
+							</p>
+							<p>
+								Rápida, lo que los hace adecuados para aplicaciones dinámicas como la detección de piezas en movimiento en líneas de producción.
+							</p>
+						</section>
+						<section>
+							<p>
+								Sensibilidad al Entorno:      
+							</p>
+							<p>
+								Los sensores ópticos y ultrasónicos pueden verse afectados por condiciones ambientales como la luz ambiental o la presencia de polvo, lo que puede interferir con su funcionamiento.
+							</p>
+						</section>
+						<section>
+							<p>
+								Compatibilidad de Materiales:       
+							</p>
+							<p>
+								Los sensores inductivos están limitados a materiales metálicos, mientras que los capacitivos pueden detectar una amplia variedad de materiales.
+							</p>
+						</section>
+						<section>
+							<p>
+								Durabilidad:      
+							</p>
+							<p>
+								Generalmente alta, especialmente en sensores inductivos y magnéticos, que son resistentes a condiciones adversas como polvo, suciedad, y vibraciones.
+							</p>
+						</section>
+						<section>
+							1.4.4 Modo de comunicación
+						</section>
+						<section>
+							<p>
+								Salida Digital:  
+							</p>
+							<p>
+								La mayoría de los sensores de proximidad ofrecen una salida digital simple (on/off) que indica la presencia o ausencia de un objeto. Esto es común en sensores inductivos, capacitivos, y magnéticos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Salida Analógica:      
+							</p>
+							<p>
+								Algunos sensores, especialmente los ultrasónicos y capacitivos, pueden proporcionar una salida analógica que varía en función de la distancia o la proximidad del objeto.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Serial (I2C, SPI, UART):      
+							</p>
+							<p>
+								Sensores más avanzados, como algunos sensores ultrasónicos y RFID, pueden utilizar protocolos de comunicación serial para transmitir datos más complejos a microcontroladores o sistemas embebidos.
+							</p>
+						</section>
+						<section>
+							<p>
+								Comunicación Inalámbrica:       
+							</p>
+							<p>
+								Para aplicaciones donde el cableado es impráctico, algunos sensores de proximidad pueden comunicarse de manera inalámbrica utilizando tecnologías como Bluetooth, ZigBee, o Wi-Fi, permitiendo el monitoreo remoto y la integración en sistemas IoT (Internet de las Cosas).
+							</p>
+						</section>
+						<section>
+							<p>
+								Bus de Campo (Fieldbus):       
+							</p>
+							<p>
+								En aplicaciones industriales, los sensores de proximidad pueden integrarse en redes de campo como Modbus, Profibus, o CANbus, permitiendo la comunicación con sistemas de control distribuidos.
+							</p>
+						</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
